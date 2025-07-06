@@ -1,0 +1,103 @@
+body {
+  background: #181818;
+  color: #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background: #232323;
+  padding: 2.5rem 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main p {
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+  margin: 0 0 2rem 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.btns button {
+  background: #3a3a3a;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btns button:hover {
+  background: #0078d4;
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.btns button:active {
+  background: #005a9e;
+  transform: translateY(0);
+}
+
+.btns button:nth-child(1) {
+  background: #0078d4; /* أزرق */
+  color: #fff;
+}
+.btns button:nth-child(1):hover {
+  background: #005a9e;
+}
+
+.btns button:nth-child(2) {
+  background: #d43a3a; /* أحمر */
+  color: #fff;
+}
+.btns button:nth-child(2):hover {
+  background: #b32a2a;
+}
+
+.btns button:nth-child(3) {
+  background: #2eb872; /* أخضر */
+  color: #fff;
+}
+.btns button:nth-child(3):hover {
+  background: #219150;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1.2rem 0.5rem;
+    border-radius: 1rem;
+    min-width: 90vw;
+    box-sizing: border-box;
+  }
+
+  main p {
+    font-size: 2rem;
+  }
+
+  .btns {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .btns button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+}
